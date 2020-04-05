@@ -14,14 +14,9 @@ export class Auth extends EventEmitter {
 
   get routes() {
     return {
-      '/redirect': () => () => {
-        this.handleRedirect();
-        return <Fragment />;
-      },
-      '/callback': () => () => {
-        this.handleCallback('GITHUB');
-        return <Fragment />;
-      }
+      '/redirect': () => () => this.handleRedirect(),
+      // TODO: Refactor for dynamic type callbacks
+      '/callback': () => () => this.handleCallback('GITHUB')
     };
   }
 
