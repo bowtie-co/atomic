@@ -1,19 +1,40 @@
 {
-  "name": "atomic-hooks",
+  "name": "@bowtie/atomic",
   "version": "0.0.1",
-  "description": "Atomic Hooks",
+  "description": "Bowtie React Atomic",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bowtie-co/atomic-hooks.git"
+    "url": "git+https://github.com/bowtie-co/atomic.git"
   },
   "author": "Bowtie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bowtie-co/atomic-hooks/issues"
+    "url": "https://github.com/bowtie-co/atomic/issues"
   },
-  "homepage": "https://github.com/bowtie-co/atomic-hooks#readme"
+  "homepage": "https://github.com/bowtie-co/atomic#readme",
+  "dependencies": {
+    "@bowtie/api": "^0.6.3",
+    "@emotion/core": "^10.0.28",
+    "classnames": "^2.2.6",
+    "eventemitter2": "^5.0.1",
+    "hookrouter": "^1.2.3",
+    "moment": "^2.24.0",
+    "pubnub": "^4.27.4",
+    "qs": "^6.9.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-select": "^3.1.0",
+    "react-spinners": "^0.6.1",
+    "reactstrap": "^8.4.1",
+    "uuid": "^3.4.0"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.{js,jsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx} --fix",
+    "test": "echo test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }
